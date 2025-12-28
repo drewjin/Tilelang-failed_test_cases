@@ -1,0 +1,32 @@
+Test Case Failure Summary
+Generated at: 2025-12-28 13:56:10
+
+Shapes:
+  q: [448, 28, 128]
+  k: [448, 4, 128]
+  v: [448, 4, 128]
+  k_cache: [505, 32, 4, 128]
+  v_cache: [505, 32, 4, 128]
+  block_tables: [14, 5]
+  kernel_output: [448, 28, 128]
+  gt_output: [448, 28, 128]
+
+Parameters:
+  max_seqlen_q: 32
+  scale: 0.08838834764831845
+  num_groups: 7
+  page_block_size: 32
+  diffusion_block_size: 32
+  is_block_attn: False
+  atol: 0.01
+  rtol: 0.01
+
+Statistics:
+  Max absolute difference: 0.062500
+  Mean absolute difference: 0.000483
+  Max relative difference: 18176.000000
+  Mean relative difference: 0.020630
+  Total elements: 1605632
+  Elements exceeding absolute tolerance: 8161 (0.51%)
+  Elements exceeding relative tolerance: 55206 (3.44%)
+  Elements exceeding either tolerance: 63362 (3.95%)
